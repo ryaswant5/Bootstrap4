@@ -58,3 +58,9 @@ address{
     padding-left:150px ;
     text-align: justify;
 }
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
