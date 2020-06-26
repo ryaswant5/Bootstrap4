@@ -67,6 +67,17 @@ body{
     }
 }
 
+    .modal-header
+    {
+       background-color: $background-dark;
+       -webkit-text-fill-color: floralwhite;
+    
+    }
+    .modal-body{
+        background-color: $background-pale;
+    }
+
+
 #carouselButton {
     right:0px;
     position: absolute;

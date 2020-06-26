@@ -31,9 +31,9 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul> 
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <button class="btn text-white" id = "Login">
                         <span class="fa fa-sign-in"></span> Login
-                    </a>
+                    </button>
                 </span>
             </div>
         </div>
@@ -75,7 +75,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="Reservemodal" role="dialog">
+    <div class="modal fade" id="ReserveModal" role="dialog">
 
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -162,7 +162,7 @@
                     <img src = "img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a class="btn btn-warning btn-sm btn-block"  data-toggle ="modal" data-target ="#Reservemodal" href="#Reserve" role="button" >Reserve Table</a>
+                    <button class="btn btn-warning btn-sm btn-block" id ="reserve_table">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -323,6 +323,14 @@
 <script>
     $(document).ready(function(){
         $("#mycarousel").carousel( { interval: 2000, pause:"false" } );
+
+        $("#Login").click(function(){
+            $("#loginModal").modal("show");
+        });
+
+        $("#reserve_table").click(function(){
+            $("#ReserveModal").modal("show");
+        });
 
         $("#carouselButton").click(function(){
             if($("#carouselButton").children("span").hasClass('fa-pause'))
